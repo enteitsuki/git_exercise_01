@@ -3,3 +3,5 @@ sales = { "hokkaido"=>150, "tohoku"=>200, "kanto"=>500, "chubu"=>300, "kinki"=>4
 sales.each do |name, sale|
   puts "#{name}"
 end
+
+p sales.values.inject(:+)
